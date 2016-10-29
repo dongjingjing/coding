@@ -1,0 +1,38 @@
+1. Before operation system install
+
+wireless network card driver
+
+display card driver
+
+chinese input software
+
+internet browser
+
+2. tools
+
+git
+https://git-scm.com/
+
+sourcetree
+https://www.sourcetreeapp.com/
+
+sublime text + package control + sublime markdown
+http://www.sublimetext.com/
+https://packagecontrol.io/installation#Simple
+https://github.com/revolunet/sublimetext-markdown-preview
+
+python anaconda(ship with ipython and jupyter)
+https://www.continuum.io/downloads
+
+ipython+jupyter
+http://ipython.org/
+
+IRKernel for jupyter
+https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
+
+r
+https://www.r-project.org/
+
+rstudio
+https://www.rstudio.com/
+
