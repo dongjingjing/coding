@@ -1,0 +1,82 @@
+1.变量只能为首：字母或者下划线
+其他可为字母或者下划线
+2.
+求交集：
+l1=[1,2,3,3,4]
+l2=[2,3,4]
+l=[]
+for item1 in l1:
+    for item2 in l2:
+        if item2 in l:
+           pass
+        else:
+           if item1==item2:
+              l.append(item2)
+print(l)
+简化时 ，可以自定义函数：
+def intersection(l1,l2):
+    l=[]
+    for item1 in l1:
+        for item2 in l2:
+            if item2 in l:
+                pass
+            else:
+                if item1==item2:
+                    l.append(item2)
+    return l
+
+l1=[1,2,3,3,4]
+l2=[2,3,4]
+l = intersection(l1,l2)
+print(l)
+
+外生变量在函数中不用具体化
+3.模块后要加冒号：包括for，while，def，if
+对于模块中的子模块，一定要注意tab键的缩进
+4、利用cmd：
+先要链接python
+再定义l=【】或者l=list（）
+l.+tab键进行选择
+再例l.append??进行询问
+
+程序目的：数数加排序
+l = ['apple', 'pear', 'orange', 'apple', 'orange', 'orange', 'apple', 'pear']
+d={}
+
+for item in l:
+    if item in d:
+        d[item]=d[item]+1
+    else:
+        d[item]=1
+
+fruit_list=[]
+
+for key in d:
+    i=0
+    while i<d[key]:   
+        i += 1
+        fruit_list.append(key)
+
+print(fruit_list)
+注意：list和dict的区别
+
+
+
+range函数的使用；print函数的使用；打出#
+range函数不包括最后一位
+range（0,3,2）
+表示0.2.4三个数位，注意range只是范围，而不是数字，要调用数字，还是要使用l[i]
+for i in range (0,3,2)
+print(l[i]）
+m=3
+for i in range(0,m):
+    for j in range(0,m-i):
+        print(' ',end='')
+    for j in range(0,2*i+1):
+        print('#',end='')
+    print('')
+
+结果：
+   #
+  ###
+ #####
