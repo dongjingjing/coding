@@ -46,26 +46,26 @@ import random
 ##   return s
 ##
 ##
-##def mymaxandremove(l):
-##   if len(l) == 0:
-##        return None
-##    max_l=l[0]
-##  for item in l:
-##       if item>max_l:
-##         max_l=item
-##
-##  l.remove(max_l);
-## return max_l
-##
-##def mymax(l):
-## if len(l) == 0:
-##     return None
-## max_l=l[0]
-##  for item in l:
-##       if item>max_l:
-##            max_l=item
-##   return max_l
-##
+#def mymaxandremove(l):
+#   if len(l) == 0:
+#        return None
+#    max_l=l[0]
+#  for item in l:
+#       if item>max_l:
+#         max_l=item
+
+#  l.remove(max_l);
+# return max_l
+# #
+# def mymax(l):
+# if len(l) == 0:
+#     return None
+# max_l=l[0]
+#  for item in l:
+#       if item>max_l:
+#            max_l=item
+#   return max_l
+# #
 ##print(sorted(price_list)[10])
 ##
 ##i=0
@@ -107,14 +107,14 @@ import random
 
 
 
-l = ['apple', 'pear', 'orange', 'apple', 'orange', 'orange', 'apple', 'pear']
-d={}
-for item in l :
-    if item in d :
-        d[item]=d[item]+1
-    else:
-        d[item]=1
-##print(d)
+# l = ['apple', 'pear', 'orange', 'apple', 'orange', 'orange', 'apple', 'pear']
+# d={}
+# for item in l :
+#     if item in d :
+#         d[item]=d[item]+1
+#     else:
+#         d[item]=1
+# ##print(d)
 ##f_l=[]
 ##for key in d:
 ##    i=0
@@ -204,4 +204,5 @@ while x!=a:
 print('congratulations!')
 print(x)
             
+x=1
 
