@@ -102,3 +102,28 @@ while x != a:
 		print('it is too small')
 	x=int(input('plese enter an integer(0-1000):'))
 print('congratulations')
+
+#pie_chart
+import csv
+import matplotlib.pyplot as plt
+with open('tbl_user.csv','r', encoding='utf-8') as f:
+	reader = csv.reader(f)
+	l=[]
+	d={}
+	for row in reader:
+		email=row[3].strip()
+		if email:
+			x=email.index('@')
+			y=email.index('.',x)
+			company=email[x+1:y]
+			l.append(company)
+	for item in l:
+		if item  in d:
+			d[item]=d[item]+1
+		else:
+			d[item]=1
+	labels=list(d.keys())
+	sizes=list(d.values())
+	plt.pie(sizes, labels=labels)
+	plt.axis('equal')
+	plt.show()
